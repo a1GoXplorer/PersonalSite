@@ -1,0 +1,158 @@
+#MarkDaniels {
+	color:white;
+	height: 180px;
+	width: 300px;
+	border-color:white;
+	border-radius:20px;
+	border-style:double;
+	margin: 5px;
+	padding: 5px;
+	
+
+}
+
+
+#Homer {
+	height: 200px;
+	width: 200px;
+	border-width: 4px;
+	border-color: white;
+	border-style:double;
+	border-radius: 20px;
+	background-color: red;
+	margin: 5px;
+	padding: 5px;
+	display: inline-block;
+	background-image: url("images/thinkinghomer.png");
+	background-size:250px;
+	position:absolute;
+	top:0px;
+	right:0px;
+
+}
+
+
+#MyPhoto {
+
+	height: 200px;
+	width: 200px;
+    border-width: 4px;
+    border-color: white;
+    border-style: double;
+    border-radius: 10px;
+    background-color:brown; 
+    margin: 5px;
+	padding: 5px;
+	background-image:url("images/Picture 2.jpg");
+	background-size:280px;
+	text-align: left;
+	margin-right:auto;
+	margin-left:auto;
+	margin-bottom: auto;
+	margin-top: auto;
+
+}
+
+#ConfusedChimp {
+	height: 200px;
+	width: 200px;
+    border-width: 4px;
+    border-color: white;
+    border-style: double;
+    border-radius: 10px;
+    margin: 5px;
+	padding: 5px;
+	display: inline-block;
+	background-image: url("images/computer-monkey.jpg");
+	background-size: 270px;
+}
+
+#Back {
+position: relative;
+left: 250px;
+}
+
+#Next {
+	position: relative;
+	right: 250px;
+
+}
+
+#FlipBook {
+	position:absolute;
+	bottom: 0px;
+	right: 0px;
+
+}
+
+#FlipBook IMG {
+	position: absolute;
+	top: 0;
+	left 0;
+	z-index:8;
+}
+
+#FlipBook IMG.active {
+	z-index:10;
+}
+
+#FlipBook IMG.last-active {
+	z-index: 9;
+}
+
+body {
+	background:black;
+}
+
+
+a {
+	display: block;
+	color:white;
+}
+
+p {
+	color:white;
+}
+
+
+h1 {
+color: white;
+font-family: 'Kaushan Script', cursive;
+font-size: 35px;
+position: relative;
+left: 30px;
+}
+
+h2 {
+color:black;
+font-family: 'Francois One', sans-serif;
+}
+
+h3 {
+font-family: 'Inconsolata' ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
