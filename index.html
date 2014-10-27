@@ -1,0 +1,150 @@
+<!--My personal website
+created for the General Assembly admissions interview-->
+
+<!DOCTYPE html>
+
+
+
+<html>
+
+
+
+
+
+
+<head>
+
+  
+
+	<title>Mark Daniels</title>
+
+
+<!--Google Fonts-->
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
+    
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+
+    <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>   
+
+    <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'> 
+
+
+	<meta charset="utf-8">
+	
+	<link href="stylesheet.css" rel="stylesheet">
+
+  <link href="jquery-1.11.1.min.js">
+
+
+
+<script>
+
+
+var testJS = function(){
+  alert("Hello World");
+};
+
+testJS();
+
+
+     var changePic= function() {
+      
+       var $active = $('#FlipBook IMG.active');
+
+       if ($active.length == 0) $active = $('#FlipBook IMG:last');
+
+       var $next = $active.next().length ? $active.next()
+          : $('#FlipBook IMG: first');
+
+
+      $active.addClass('last-active');
+
+      $next.css({opacity: 0.0})
+          .addClass('active')
+          .animate({opacity: 1.0, 1000, function() {
+              $active.removeClass('active last-active');
+          });
+
+
+      }
+
+
+    $(function() {
+       setInterval("changePic()", 1000);
+     });  
+
+
+
+
+  </script>
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+<body>
+
+	<!--Boxes-->
+
+<div id="MarkDaniels">
+  <h1>Mark Daniels</h1>
+  <a href="mailto:Mark_Daniels1982@hotmail.com">email</a>
+  <a href="https://twitter.com/MarkLDaniels">twitter</a>
+  <a href="https://www.facebook.com/mark.daniels.5437">facebook</a>
+  </div>
+
+
+  
+
+<div id="Homer">
+ 	<h2>Homer</h2>
+</div>
+
+
+<div id="MyPhoto">
+		<h2>My Photo</h2>
+  </div>
+
+  <h3>ABOUT ME<h3>
+    <p>I am a former brewer/financial analyst learning the ropes of web development.  I've lived in Texas, California, Massachusetts, Washington, and New Jersey.  I've also spent time in Chicago, Illinois and Munich, Bavaria, Germany studying brewing.  Other than working on the computer I enjoy food and drink, music, language, arts, and much much more.  I have a girlfriend and a small Pekingese dog.  They are both totally awesome.</p>
+
+ <div id="ConfusedChimp">
+  	    <h2>???</h2>
+  	</div>
+
+  	
+
+   
+
+<!--The Picture Carousel-->
+
+<div id="FlipBook">
+
+       
+         <img src="images/electronic-circuit.jpg"  style="position:absolute;" alt="" class="active" height="300px" width="300px"/>
+
+         <img src="images/nautilus.jpg" style="position:absolute;"
+         alt="" height="300px" width="300px"/>
+
+         <img src="images/Wappen.jpg" style="position:absolute;" alt="" height="300px" width="300px"/>
+
+         <img src="images/Tsunami_by_hokusai_19th_century.jpg" style="position:absolute;" alt="" height="300px" width="300px">
+       
+
+   </div>
+ 
+	
+</body>
+
+
+
+</html>
